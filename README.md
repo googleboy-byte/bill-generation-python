@@ -33,7 +33,8 @@ To change bill output format, edit **billtemplate.html** under **./template_html
 **folder structure**
 
 ./
-	dat/	{mustpresent}
+	
+ 	dat/	{mustpresent}
 		
   		menu_card.xlsx	{mustpresent}
 		menujson.json 	{mustpresent_generatedby_../../create_menu_json.py}
