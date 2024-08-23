@@ -1,0 +1,674 @@
+{
+    "1": {
+        "itemname": "Luchi Chholar Dal/Alu Chachhari",
+        "itemrate": 90
+    },
+    "2": {
+        "itemname": "Paratha with Alu Dum ",
+        "itemrate": 90
+    },
+    "3": {
+        "itemname": "Alu Paratha with Curd ",
+        "itemrate": 100
+    },
+    "4": {
+        "itemname": "Omlette/Poach/Boiled Egg (Double)",
+        "itemrate": 70
+    },
+    "5": {
+        "itemname": "Scrambled Egg ",
+        "itemrate": 150
+    },
+    "6": {
+        "itemname": "Masala Omlette with Cheese ",
+        "itemrate": 90
+    },
+    "7": {
+        "itemname": "Veg Maggi",
+        "itemrate": 60
+    },
+    "8": {
+        "itemname": "Egg Maggi",
+        "itemrate": 80
+    },
+    "9": {
+        "itemname": "Chicken Maggi ",
+        "itemrate": 100
+    },
+    "10": {
+        "itemname": " Bread Toast with Butter/Jam",
+        "itemrate": 80
+    },
+    "11": {
+        "itemname": "Veg Sandwich ",
+        "itemrate": 80
+    },
+    "12": {
+        "itemname": " Veg Cheese Sandwich",
+        "itemrate": 100
+    },
+    "13": {
+        "itemname": "Corn Sandwich",
+        "itemrate": 80
+    },
+    "14": {
+        "itemname": "Corn Cheese Sandwich",
+        "itemrate": 100
+    },
+    "15": {
+        "itemname": " Chicken Sandwich ",
+        "itemrate": 120
+    },
+    "16": {
+        "itemname": "Cheese  Chicken Sandwich ",
+        "itemrate": 140
+    },
+    "17": {
+        "itemname": "Milk and Corn Flakes",
+        "itemrate": 120
+    },
+    "18": {
+        "itemname": "Pasta with White Sauce",
+        "itemrate": 150
+    },
+    "19": {
+        "itemname": "Pasta with Red Sauce",
+        "itemrate": 120
+    },
+    "20": {
+        "itemname": "Assam CTC Tea",
+        "itemrate": 40
+    },
+    "21": {
+        "itemname": "Darjeeling Tea",
+        "itemrate": 50
+    },
+    "22": {
+        "itemname": "Green Tea",
+        "itemrate": 50
+    },
+    "23": {
+        "itemname": "Coffee",
+        "itemrate": 50
+    },
+    "24": {
+        "itemname": "Milk Cup",
+        "itemrate": 50
+    },
+    "25": {
+        "itemname": "Veg Pakora  (6 pcs)",
+        "itemrate": 120
+    },
+    "26": {
+        "itemname": "Paneer Pakora (6 pcs) ",
+        "itemrate": 140
+    },
+    "27": {
+        "itemname": "Mushroom Pakora (6 pcs) ",
+        "itemrate": 140
+    },
+    "28": {
+        "itemname": "French Fries ",
+        "itemrate": 120
+    },
+    "29": {
+        "itemname": "Crispy Chilli Baby Corn ",
+        "itemrate": 180
+    },
+    "30": {
+        "itemname": "Peanut Masala ",
+        "itemrate": 120
+    },
+    "31": {
+        "itemname": "Stir Fried Potato ",
+        "itemrate": 160
+    },
+    "32": {
+        "itemname": "Chatpata Corn ",
+        "itemrate": 160
+    },
+    "33": {
+        "itemname": "Egg Pakora (8 pcs)",
+        "itemrate": 120
+    },
+    "34": {
+        "itemname": "Chicken Pakora Boneless (6 pcs)",
+        "itemrate": 200
+    },
+    "35": {
+        "itemname": "Chicken Salt and Pepper",
+        "itemrate": 250
+    },
+    "36": {
+        "itemname": "Chilli Chicken Dry (6 pcs)",
+        "itemrate": 260
+    },
+    "37": {
+        "itemname": "Katla Fish Fry (2 pcs)",
+        "itemrate": 180
+    },
+    "38": {
+        "itemname": "Fish Fry Bhetki (1 pc) ",
+        "itemrate": 140
+    },
+    "39": {
+        "itemname": "Fish Finger Bhetki (6 pcs)",
+        "itemrate": 280
+    },
+    "40": {
+        "itemname": "Chilli Fish Dry (6 pcs) ",
+        "itemrate": 300
+    },
+    "41": {
+        "itemname": " Golden Prawn (6 pcs) ",
+        "itemrate": 320
+    },
+    "42": {
+        "itemname": "Crispy Chicken with honey ",
+        "itemrate": 250
+    },
+    "43": {
+        "itemname": "Sweet Corn Soup (Veg) ",
+        "itemrate": 100
+    },
+    "44": {
+        "itemname": "Sweet Corn Soup (Chicken) ",
+        "itemrate": 120
+    },
+    "45": {
+        "itemname": "Chicken Clear Soup",
+        "itemrate": 120
+    },
+    "46": {
+        "itemname": "Cream of Chicken Soup",
+        "itemrate": 150
+    },
+    "47": {
+        "itemname": "Chicken Hot & Sour Soup",
+        "itemrate": 130
+    },
+    "48": {
+        "itemname": "Murg Tandooori (Full) ",
+        "itemrate": 420
+    },
+    "49": {
+        "itemname": "Murg Tandoori (Half) ",
+        "itemrate": 260
+    },
+    "50": {
+        "itemname": "Murg Tikka Kebab (6 pcs) ",
+        "itemrate": 300
+    },
+    "51": {
+        "itemname": "Reshmi Kebab (6 pcs) ",
+        "itemrate": 320
+    },
+    "52": {
+        "itemname": "Murg Lahsuni Tangri Kebab (4 pcs) ",
+        "itemrate": 320
+    },
+    "53": {
+        "itemname": "Tandoori Prawn (2 pcs) ",
+        "itemrate": 400
+    },
+    "54": {
+        "itemname": "Tandoori Pomfret (1 pc) ",
+        "itemrate": 280
+    },
+    "55": {
+        "itemname": "Fish Ajwaini Tikka (4 pcs) ",
+        "itemrate": 400
+    },
+    "56": {
+        "itemname": "Green Salad ",
+        "itemrate": 70
+    },
+    "57": {
+        "itemname": "Onion Salad ",
+        "itemrate": 40
+    },
+    "58": {
+        "itemname": "Cucumber Salad ",
+        "itemrate": 40
+    },
+    "59": {
+        "itemname": "Mixed Raita",
+        "itemrate": 90
+    },
+    "60": {
+        "itemname": "Tawa Roti ",
+        "itemrate": 10
+    },
+    "61": {
+        "itemname": "Plain Paratha ",
+        "itemrate": 20
+    },
+    "62": {
+        "itemname": "Laccha Paratha ",
+        "itemrate": 30
+    },
+    "63": {
+        "itemname": "Tandoor Roti ",
+        "itemrate": 25
+    },
+    "64": {
+        "itemname": " Butter Tandoor Roti ",
+        "itemrate": 35
+    },
+    "65": {
+        "itemname": "Plain Naan ",
+        "itemrate": 40
+    },
+    "66": {
+        "itemname": "Butter Naan ",
+        "itemrate": 50
+    },
+    "67": {
+        "itemname": "Masala Kulcha",
+        "itemrate": 80
+    },
+    "68": {
+        "itemname": "Steamed Rice (Basmati) ",
+        "itemrate": 80
+    },
+    "69": {
+        "itemname": "Steamed Rice (Half) ",
+        "itemrate": 50
+    },
+    "70": {
+        "itemname": "Jeera Rice ",
+        "itemrate": 120
+    },
+    "71": {
+        "itemname": "Basanti Pulao ",
+        "itemrate": 170
+    },
+    "72": {
+        "itemname": "Peas Pulao ",
+        "itemrate": 170
+    },
+    "73": {
+        "itemname": "Kashmiri Pulao ",
+        "itemrate": 250
+    },
+    "74": {
+        "itemname": "Jhuri Alu Bhaja ",
+        "itemrate": 60
+    },
+    "75": {
+        "itemname": "Begun Bhaja (4 pcs) ",
+        "itemrate": 100
+    },
+    "76": {
+        "itemname": "Shukto",
+        "itemrate": 130
+    },
+    "77": {
+        "itemname": "Alu Posto ",
+        "itemrate": 150
+    },
+    "78": {
+        "itemname": "Mochar Ghonto ",
+        "itemrate": 120
+    },
+    "79": {
+        "itemname": "Masoor Dal ",
+        "itemrate": 80
+    },
+    "80": {
+        "itemname": "Sona Moong Dal ",
+        "itemrate": 90
+    },
+    "81": {
+        "itemname": "Alu Phoolkopir Dalna ",
+        "itemrate": 130
+    },
+    "82": {
+        "itemname": "Alu Potoler Dalna ",
+        "itemrate": 110
+    },
+    "83": {
+        "itemname": "Posto Bora (2 pcs)",
+        "itemrate": 160
+    },
+    "84": {
+        "itemname": "Lau Ghonto ",
+        "itemrate": 120
+    },
+    "85": {
+        "itemname": "Dhokar Dalna (4 pcs) ",
+        "itemrate": 140
+    },
+    "86": {
+        "itemname": "Tomato Chutney ",
+        "itemrate": 50
+    },
+    "87": {
+        "itemname": "Amer Chutney",
+        "itemrate": 80
+    },
+    "88": {
+        "itemname": "Machher Matha diye Dal ",
+        "itemrate": 120
+    },
+    "89": {
+        "itemname": "Potol Chingri ",
+        "itemrate": 140
+    },
+    "90": {
+        "itemname": "Lau Chingri ",
+        "itemrate": 140
+    },
+    "91": {
+        "itemname": "Enchor Chingri ",
+        "itemrate": 140
+    },
+    "92": {
+        "itemname": "Mocha Chingri ",
+        "itemrate": 140
+    },
+    "93": {
+        "itemname": "Kochupata diye Chingri Bhapa ",
+        "itemrate": 180
+    },
+    "94": {
+        "itemname": "Egg Curry (2 pcs) ",
+        "itemrate": 110
+    },
+    "95": {
+        "itemname": "Katla Kalia (1 pc) ",
+        "itemrate": 130
+    },
+    "96": {
+        "itemname": "Doi Katla (1 pc) ",
+        "itemrate": 130
+    },
+    "97": {
+        "itemname": "Hilsha Bhapa (1 pc) ",
+        "itemrate": 400
+    },
+    "98": {
+        "itemname": "Pabda/Parshe Sorshe/Jhal",
+        "itemrate": 210
+    },
+    "99": {
+        "itemname": "Pomfret Sorshe/Masala (1 pc) ",
+        "itemrate": 170
+    },
+    "100": {
+        "itemname": "Bhetki Masala (2 pcs) ",
+        "itemrate": 350
+    },
+    "101": {
+        "itemname": "Bhetki Paturi (1 pc) ",
+        "itemrate": 220
+    },
+    "102": {
+        "itemname": "Ilish Paturi (1 pc) ",
+        "itemrate": 450
+    },
+    "103": {
+        "itemname": "Malai Prawn (2 pcs)",
+        "itemrate": 400
+    },
+    "104": {
+        "itemname": "Dal Fry ",
+        "itemrate": 130
+    },
+    "105": {
+        "itemname": "Dal Makhani ",
+        "itemrate": 150
+    },
+    "106": {
+        "itemname": "Navaratna Curry ",
+        "itemrate": 230
+    },
+    "107": {
+        "itemname": "Paneer Butter Masala ",
+        "itemrate": 220
+    },
+    "108": {
+        "itemname": " Matar Paneer ",
+        "itemrate": 180
+    },
+    "109": {
+        "itemname": "Shahi Paneer ",
+        "itemrate": 220
+    },
+    "110": {
+        "itemname": "Mushroom Masala ",
+        "itemrate": 230
+    },
+    "111": {
+        "itemname": "Mixed Veg",
+        "itemrate": 220
+    },
+    "112": {
+        "itemname": "Chicken Curry (4 pcs) ",
+        "itemrate": 250
+    },
+    "113": {
+        "itemname": "Chicken Kosha (4 pcs) ",
+        "itemrate": 250
+    },
+    "114": {
+        "itemname": "Chicken Dopiyaja (4 pcs) ",
+        "itemrate": 270
+    },
+    "115": {
+        "itemname": "Kadai Chicken (4 pcs) ",
+        "itemrate": 270
+    },
+    "116": {
+        "itemname": "Chicken Bharta ",
+        "itemrate": 270
+    },
+    "117": {
+        "itemname": "Chicken Butter Masala (4 pcs) ",
+        "itemrate": 300
+    },
+    "118": {
+        "itemname": "Chicken Tikka Butter Masala (4 pcs) ",
+        "itemrate": 330
+    },
+    "119": {
+        "itemname": "Mutton Curry (4 pcs) ",
+        "itemrate": 370
+    },
+    "120": {
+        "itemname": "Mutton Kosha (4 pcs) ",
+        "itemrate": 370
+    },
+    "121": {
+        "itemname": "Mutton Keema ",
+        "itemrate": 370
+    },
+    "122": {
+        "itemname": "Pata Pora Chicken ",
+        "itemrate": 600
+    },
+    "123": {
+        "itemname": "Pata Pora Mutton",
+        "itemrate": 750
+    },
+    "124": {
+        "itemname": "Veg Fried Rice",
+        "itemrate": 150
+    },
+    "125": {
+        "itemname": "Egg Fried Rice",
+        "itemrate": 170
+    },
+    "126": {
+        "itemname": "Chicken Fried Rice",
+        "itemrate": 190
+    },
+    "127": {
+        "itemname": "Egg Chicken Fried Rice",
+        "itemrate": 210
+    },
+    "128": {
+        "itemname": "Mixed Fried Rice",
+        "itemrate": 260
+    },
+    "129": {
+        "itemname": "Veg Noodles (Hakka)",
+        "itemrate": 130
+    },
+    "130": {
+        "itemname": "Egg Noodles (Hakka)",
+        "itemrate": 150
+    },
+    "131": {
+        "itemname": "Chicken Noodles (Hakka)",
+        "itemrate": 180
+    },
+    "132": {
+        "itemname": "Egg Chicken Noodles (Hakka) ",
+        "itemrate": 200
+    },
+    "133": {
+        "itemname": "Mixed Noodles (Hakka)",
+        "itemrate": 240
+    },
+    "134": {
+        "itemname": "Veg Noodles (Gravy)",
+        "itemrate": 140
+    },
+    "135": {
+        "itemname": "Egg Noodles (Gravy)",
+        "itemrate": 160
+    },
+    "136": {
+        "itemname": "Chicken Noodles (Gravy)",
+        "itemrate": 190
+    },
+    "137": {
+        "itemname": "Egg Chicken Noodles (Gravy)",
+        "itemrate": 210
+    },
+    "138": {
+        "itemname": "Mixed Noodles (Gravy)",
+        "itemrate": 250
+    },
+    "139": {
+        "itemname": "Veg Manchurian (6 pcs)",
+        "itemrate": 240
+    },
+    "140": {
+        "itemname": "Chilli Paneer (6 pcs)",
+        "itemrate": 240
+    },
+    "141": {
+        "itemname": "Chilli Chicken B/L (6 pcs)",
+        "itemrate": 290
+    },
+    "142": {
+        "itemname": "Chicken Manchurian B/L (6 pcs)",
+        "itemrate": 290
+    },
+    "143": {
+        "itemname": "Chicken Schezwan B/L (6 pcs) ",
+        "itemrate": 290
+    },
+    "144": {
+        "itemname": "Garlic Chicken B/L (6 pcs)",
+        "itemrate": 290
+    },
+    "145": {
+        "itemname": "Butter Garlic Chicken B/L (6 pcs)",
+        "itemrate": 290
+    },
+    "146": {
+        "itemname": "Lemon Chicken (6 pcs)",
+        "itemrate": 290
+    },
+    "147": {
+        "itemname": "Pan Fried Honey Chicken (6 pcs)",
+        "itemrate": 320
+    },
+    "148": {
+        "itemname": "Chilli Fish (6 pcs)",
+        "itemrate": 350
+    },
+    "149": {
+        "itemname": "Schezwan Fish (6 pcs)",
+        "itemrate": 350
+    },
+    "150": {
+        "itemname": "Fish Manchurian (6 pcs)",
+        "itemrate": 350
+    },
+    "151": {
+        "itemname": "Veg Thali ",
+        "itemrate": 230
+    },
+    "152": {
+        "itemname": "Katla Thali",
+        "itemrate": 330
+    },
+    "153": {
+        "itemname": "Chicken Thali",
+        "itemrate": 330
+    },
+    "154": {
+        "itemname": "Mutton Thali",
+        "itemrate": 400
+    },
+    "155": {
+        "itemname": "Rosogolla  (2 Pcs)",
+        "itemrate": 40
+    },
+    "156": {
+        "itemname": "Sandesh  (2 Pcs)",
+        "itemrate": 50
+    },
+    "157": {
+        "itemname": "Sweet curd ",
+        "itemrate": 50
+    },
+    "158": {
+        "itemname": "Sour Curd ",
+        "itemrate": 40
+    },
+    "159": {
+        "itemname": "Vanilla Icecream with Hot Chocolava ",
+        "itemrate": 120
+    },
+    "160": {
+        "itemname": "Two-in-One",
+        "itemrate": 120
+    },
+    "161": {
+        "itemname": "Nolen Gur Ice Cream",
+        "itemrate": 130
+    },
+    "162": {
+        "itemname": "Lassi ",
+        "itemrate": 70
+    },
+    "163": {
+        "itemname": "Chhas",
+        "itemrate": 70
+    },
+    "164": {
+        "itemname": "Masala Cold Drinks",
+        "itemrate": 70
+    },
+    "165": {
+        "itemname": "Fresh Lime Soda",
+        "itemrate": 70
+    },
+    "166": {
+        "itemname": "Packaged Soft Drinks (500 mL)",
+        "itemrate": 50
+    },
+    "167": {
+        "itemname": "Club Soda (600 ml)",
+        "itemrate": 50
+    },
+    "168": {
+        "itemname": "Packaged Drinking Water (1 L)",
+        "itemrate": 25
+    }
+}

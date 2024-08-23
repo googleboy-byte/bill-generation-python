@@ -1,0 +1,726 @@
+/* Basic styles for the menu bar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the button */
+.button-clear {
+    margin: 2px;
+    background-color: #db4646;
+    color: white;
+    padding: 5px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-clear:hover {
+    background-color: #0056b3;
+    box-shadow: 0 5px 15px rgba(0, 91, 187, 0.4);
+}
+
+.button-clear:active {
+    background-color: #004494;
+    box-shadow: 0 3px 10px rgba(0, 68, 148, 0.3);
+}
+
+.button-clear:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.7);
+}
+
+.button-123 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin: 2px; */
+    width: 90%;
+    background-color: #db4646;
+    color: white;
+    padding: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 3px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-123:hover {
+    background-color: #0056b3;
+    box-shadow: 0 5px 15px rgba(0, 91, 187, 0.4);
+}
+
+.button-123:active {
+    background-color: #004494;
+    box-shadow: 0 3px 10px rgba(0, 68, 148, 0.3);
+}
+
+.button-123:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.7);
+}
+
+.button-push {
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    /* margin: 2px; */
+    width: 92%;
+    background-color: #db4646;
+    color: white;
+    padding: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-push:hover {
+    background-color: #0056b3;
+    box-shadow: 0 5px 15px rgba(0, 91, 187, 0.4);
+}
+
+.button-push:active {
+    background-color: #004494;
+    box-shadow: 0 3px 10px rgba(0, 68, 148, 0.3);
+}
+
+.button-push:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.7);
+}
+
+.text-input-intlist-item{
+        width: 30%;
+        max-width: 300px;
+        padding: 4px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        box-sizing: border-box;
+        outline: none;
+        transition: border-color 0.3s ease-in-out;
+}
+
+.text-input-intlist-item:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.text-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.text-input:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.text-input-search {
+    width: 100%;
+    /* max-width: 300px; */
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.text-input-search:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.text-input-enteritemid{
+    width: 65%;
+    /* max-width: 300px; */
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.text-input-enteritemid:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.text-input-newitemdets{
+    width: 98%;
+    /* max-width: 300px; */
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.text-input-newitemdets:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.text-input-searchbill{
+    width: 98%;
+    /* max-width: 300px; */
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.text-input-searchbill:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.text-input-discount_delivery{
+    width: 15%;
+    /* max-width: 300px; */
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    height: 10px;
+}
+
+.text-input-discount_delivery:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+
+.room_nums_ParentCont{
+    margin-top: 4px;
+    width: 100%;
+    /* border: 2px solid #acabab;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.itemMenu{
+    /* margin-top: 4px; */
+    width: 25%;
+    /* border: 2px solid #acabab;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding: 3px;
+    max-height: 600px;
+    /* background-color: #000000; */
+}
+
+.bill_discount_deliverycharge_cont{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid #acabab;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); */
+    height: 30px;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.billeditem_cont{
+    width: 98%;
+    border: 2px solid #acabab;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    background-color:beige;
+    height: 45px;        
+    font-size: large;
+    align-items: center;
+}
+
+.slno_billsummary_class{
+    width: 5%;
+    height: 40px;
+    border-radius: 2px;
+    margin-left: 3px;
+    background-color:bisque;
+    color:darkred;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #386e30;
+    /* border-radius: 8px; */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.itemname_billsummary_class{
+    padding-left: 6px;
+    width: 45%;
+    scrollbar-width: thin;
+    overflow-x: auto;
+    height: 40px;
+    border-radius: 2px;
+    margin-left: 3px;
+    background-color:bisque;
+    color:darkred;
+    align-items: center;
+    display: flex;
+    /* justify-content: center; */
+    border: 2px solid #386e30;
+    /* border-radius: 8px; */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+
+}
+
+.rate_billsummary_class{
+    width: 12.5%;
+    height: 40px;
+    border-radius: 2px;
+    margin-left: 3px;
+    background-color:bisque;
+    color:darkred;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    border: 2px solid #386e30;
+    /* border-radius: 8px; */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+
+}
+
+.qty_billsummary_class{
+    width: 10%;
+    height: 40px;
+    border-radius: 2px;
+    margin-left: 3px;
+    background-color:bisque;
+    color:darkred;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    border: 2px solid #386e30;
+    /* border-radius: 8px; */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+
+}
+
+.amount_billsummary_class{
+    width: 15%;
+    height: 40px;
+    border-radius: 2px;
+    margin-left: 3px;
+    background-color:bisque;
+    color:darkred;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    border: 2px solid #386e30;
+    /* border-radius: 8px; */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+
+}
+
+.delitem_billsummary_class{
+    width: 10%;
+    height: 40px;
+    border-radius: 2px;
+    margin-left: 3px;
+    background-color:rgb(242, 28, 28);
+    color:rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #386e30;
+    /* border-radius: 8px; */
+    /* transition: all 0.3s ease-in-out; */
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+
+}
+
+.delitem_billsummary_class:hover{
+    background-color: rgb(137, 15, 15);
+    /* color: black; */
+}
+
+.text-input-qty_billsummary{
+    width: 100%;
+    /* max-width: 300px; */
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    height: 35px;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-input-qty_billsummary:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+
+.text-input-rate_billsummary{
+    width: 100%;
+    /* max-width: 300px; */
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    height: 35px;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-input-rate_billsummary:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.billsummary_actualparent{
+    width: 98%;
+    border-top: 2px solid #acabab;
+    border-bottom: 2px solid #acabab;
+    /* border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding: 3px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.billSummaryParentCont{
+    /* margin-top: 4px; */
+    width: 48%;
+    border: 2px solid #acabab;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding: 3px;
+    max-height: 400px;
+    /* margin-left: 2%; */
+    /* background-color: #000000; */
+}
+
+.enterItem_div{
+    width: 25%;
+    /* border: 2px solid #acabab;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding: 3px;
+    max-height: 600px;   
+}
+
+.newitementer_parentdiv{
+    width: 97%;
+    border-bottom: 2px solid #acabab;
+    /* border-radius: 8px; */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding: 3px;
+    max-height: 600px;  
+    justify-content: flex-start;
+    align-items: flex-start; 
+    
+}
+
+.billingDetsParent{
+    margin-top: 4px;
+    width: 100%;
+    height:max-content;
+    /* border: 2px solid #acabab;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    padding: 3px;
+    min-height: 390px;
+}
+
+.room_nums_entered_ParentCont{
+    margin-top: 4px;
+    width: 100%;
+    height: 8vh;
+    /* border: 2px solid #acabab;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+.menulist-itemclass{
+    border-radius: 5px;
+    width: 96%;
+    margin: 2px;
+    background-color: antiquewhite;
+    color: black;
+    font-size: large;
+    padding: 5px;
+}
+
+.prevnextbtn{
+    width: 45%;
+    background-color:cadetblue;
+    color: #000000;
+}
+
+.menulist-itemclass:hover{
+    background-color: rgb(242, 213, 175);
+    color: #000000;
+}
+
+.billlist-itemclass{
+    border-radius: 5px;
+    width: 96%;
+    margin: 2px;
+    background-color: antiquewhite;
+    color: black;
+    font-size: medium;
+    padding: 2px;
+}
+
+.billlist-itemclass:hover{
+    background-color: rgb(242, 213, 175);
+    color: #000000;
+    font-weight: bold;
+}
+
+.enteredroomnumdiv_class{
+    width: 40px;
+    border-radius: 4px;
+    margin: 3px;
+    border: 2px solid #acabab;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color:antiquewhite;
+    color: #000000;
+    text-align: center;
+    font-size: medium;
+}
+
+.enteredkotnumdiv_class{
+    width: 40px;
+    border-radius: 4px;
+    margin: 3px;
+    border: 2px solid #acabab;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color:antiquewhite;
+    color: #000000;
+    text-align: center;
+    font-size: medium;
+}
+
+
+.enteredconts{
+    margin-top: 1px;
+    width: 40%;
+    height: 85%;
+    border: 2px solid #acabab;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: auto;
+}
+
+.select_items_list{
+    margin-top: 4px;
+    width: 93%;
+    border: 2px solid #acabab;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding: 3px;
+    padding-right: 10px;
+    margin: 2px;
+    max-height: 350px;
+    overflow-y: auto;
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* Thumb and track color */
+}
+
+.select_bills_list{
+    margin-top: 4px;
+    width: 93%;
+    border: 2px solid #acabab;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding: 3px;
+    padding-right: 10px;
+    margin: 2px;
+    max-height: 80px;
+    overflow-y: auto;
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* Thumb and track color */
+}
+
+.bno_date_custname_parentDiv{
+    width: 97%;
+    border: 0px 5px rgb(185, 48, 48);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.billBoxMainParent{
+    display: flex;
+    width: 98%;
+    /* border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    flex-direction: column;
+    margin: 2px;
+    padding: 5px;
+}
+
+.menu-bar {
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+}
+
+.menu-options {
+    float: left;
+    color: rgb(185, 48, 48);
+    background-color: goldenrod;
+    text-shadow: 0 0 1px #000000, 0 0 2px #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    width:fit-content;
+    border: #008316;
+}
+
+.menu-options:hover {
+    background-color: #575757;
+}
+
+.menu-bar .dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.menu-bar .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+}
+
+.menu-bar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu-bar .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.menu-bar .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.menu-bar .dropdown:hover .dropdown-content {
+    display: block;
+}

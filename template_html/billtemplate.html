@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BILLING TEMPLATE</title>
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; width: 100%; justify-content: center; align-items: center;">
+        <div style="margin-top: 5px; display: flex; flex-direction: row; width: 100%; justify-content: space-around; font-size: medium; font-weight: bold;">
+            <div style=" display: flex; flex-direction: row; justify-content: space-between;">
+                No. <div style="width: 10%;" id="billnofield">xxxx</div>
+            </div>
+            <div style="display: flex; flex-direction: row; text-decoration: underline;">
+                Bill <div id="office_cust_copy_txt">(Office Copy)</div>
+            </div>
+            <div style="display: flex; flex-direction: row;">
+                Date: <div style="width: 15%; margin-left: 3px;" id="datefield">dd/mm/yyyy</div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row; width: 100%; justify-content: space-around; font-size: large; font-weight: bold;">
+                <h1>Company Name</h1>
+        </div>
+        <div style="display: flex; flex-direction: row; width: 100%; justify-content: space-around; font-size: medium;">
+            Address
+        </div>
+        <div style="display: flex; flex-direction: row; width: 100%; justify-content: space-around; font-size: medium;">
+            Ph. +xx-xxxxxxxxxx
+        </div>
+        <br>
+        <br>
+        <div style="margin-top: 5px; display: flex; flex-direction: row; width: 85.7%; justify-content: space-between; font-size: large; font-weight: bold;">
+            <div style=" display: flex; flex-direction: row; justify-content: space-between;">
+                Name: <div style="padding-left: 10px;" id="custnamefield">xxxxxx xxxxxxxx</div>
+            </div>
+            <div style="display: flex; flex-direction: row;">
+                ROOM/KOT: <div style="padding-left: 10px;" id="roomkotvals"> </div>
+            </div>
+        </div>
+        <div style="margin-top: 5px; display: flex; flex-direction: column; width: 85.7%; justify-content: flex-start; font-size: medium; font-weight: bold; border: 2px solid #000000;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); min-height: 62vh;" id="billbox">
+            <div style="width: 100%; display: flex; flex-direction: row;" id="header_row">
+                <div style="margin: 3px; width: 7%; font-weight: bold;transition: all 0.3s ease-in-out; border-bottom: 1px solid black; text-align: center; font-size: large;">
+                    Sl.
+                </div>
+                <div style="margin: 3px; width: 60%; font-weight: bold;transition: all 0.3s ease-in-out; border-bottom: 1px solid black; text-align: center; font-size: large;">
+                    ITEM
+                </div>
+                <div style="margin: 3px; width: 10%; font-weight: bold;transition: all 0.3s ease-in-out; border-bottom: 1px solid black; text-align: center; font-size: large;">
+                    RATE ($)
+                </div>
+                <div style="margin: 3px; width: 7%; font-weight: bold;transition: all 0.3s ease-in-out; border-bottom: 1px solid black; text-align: center; font-size: large;">
+                    QTY.
+                </div>
+                <div style="margin: 3px; width: 16%; font-weight: bold;transition: all 0.3s ease-in-out; border-bottom: 1px solid black; text-align: center; font-size: large;">
+                    AMOUNT ($)
+                </div>
+            </div>
+        </div>
+        <div style="padding-bottom: 3px; margin-top: 5px; display: flex; flex-direction: row; width: 85.7%; justify-content: space-between; font-size: medium; font-weight: bold; border-bottom: solid black 2px;">
+            <div id="discountlabellabel">Discount (%): </div><div id="discountlabel"></div>
+            <div id="deliverylabel">Delivery/Parcel Charge ($): </div><div id="deliverycharge_label"></div>
+            <div style="align-self:flex-end;">Total ($): </div><div id="total_label" >0</div>  
+            <!-- <div style="width: 15%; display: flex; flex-direction: row; text-align: center;">E.&O.E <br> For Raktokorobi</div> -->
+        </div>
+        <br>
+        <div style="margin-top: 15px; display: flex; flex-direction: row; width: 80%; justify-content: space-between; font-size: medium; font-weight: bold;">
+            <div style="align-self:left">Signature 1</div> <div>Signature 2</div> <div style="align-self:right; width: 15%; display: flex; flex-direction: row; text-align: center;">Signature 3</div>
+        </div>
+	<div style="margin-top:25px; display: flex; flex-direction: row; width: 80%; justify-content: space-between; font-size: small; align-self:bottom">
+            <div style="display: flex; flex-direction: row; text-align: center;">This is an electronically generated Invoice</div>
+	    <div id="timestamp" style="display: flex; flex-direction: row; text-align: center;">timestamp(automatically generated)</div>
+        </div>
+
+    </div>
+</body>
+</html>

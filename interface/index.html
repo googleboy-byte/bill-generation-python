@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="./eel.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>RAKTOKOROBI BILLING SOFTWARE</title>
+</head>
+<body>
+    <!-- <h1>Hello from Eel!</h1>
+    <button onclick="return sayHello();">
+        Click me
+    </button>
+    <div id="response">
+        response div
+    </div> -->
+
+    <div class="menu-bar">
+        <div class="dropdown">
+            <button class="dropbtn">File 
+                ▼
+            </button>
+            <div class="dropdown-content" id="fileMenuContents">
+                <div class="menu-options" id="newBillBtn" onclick="return newBillClicked();">New Bill</div>
+                <div class="menu-options" id="openBillBtn" onclick="return openBillById();">Open Bill</div>
+            </div>
+            <!-- <button class="dropbtn">Save
+                ▼
+            </button>
+            <div class="dropdown-content" id="fileMenuContents">
+                <div class="menu-options" id="newBillBtn">Save Bill</div>
+                <div class="menu-options" id="openBillBtn">Generate Bill</div>
+            </div> -->
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="return showPrevBill();">◀ Prev
+            </button>
+            <div class="dropdown-content" id="prevbillbutton">
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="return showNextBill();">Next ▶
+            </button>
+            <div class="dropdown-content" id="prevbillbutton">
+            </div>
+        </div>
+	<div class="dropdown">
+            <button class="dropbtn" onclick="return openGeneratedBills();">OPEN GENERATED BILLS
+            </button>
+            <div class="dropdown-content" id="opengenbillbtn">
+            </div>
+        </div>
+    </div>
+    <div class="billBoxMainParent">
+        <div class="bno_date_custname_parentDiv" id="billno_date_custname">
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                <label for="bno_text">Bill No:</label>
+                <div id="bno_text" class="text-input"></div>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                <label for="date_input">Date:</label>
+                <input type="text" id="date_input" class="text-input" placeholder="dd/mm/yyyy">
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                <label for="cust_name_input">Customer Name:</label>
+                <input type="text" id="cust_name_input" class="text-input" placeholder="Customer_name">
+            </div>
+        </div>
+        <div class="room_nums_ParentCont">
+            <div style="display: flex; flex-direction: row;">
+                <div style="margin-top: 2px; margin-bottom: 2px;">
+                    <label for="room_nums_input">Room/Table/Delivery No:</label>
+                    <input type="text" id="room_nums_input" class="text-input-intlist-item" placeholder="Room No.">
+                </div>
+                <div class="button-clear" onclick="return clear_roomnums();">Clear Rooms</div>
+            </div>
+            <div style="display: flex; flex-direction: row;">
+                <div style="margin-top: 2px; margin-bottom: 2px;">
+                    <label for="room_nums_input">KOT Number/s:</label>
+                    <input type="text" id="kot_nums_input" class="text-input-intlist-item" placeholder="KOT No.">
+                </div>
+                <div class="button-clear" onclick="return clear_kotnums();">Clear KOT</div>
+            </div>
+        </div>
+        <div class="room_nums_entered_ParentCont">
+            <div id="entered_room_nums" class="enteredconts"></div>
+            <div id="entered_kot_nums" class="enteredconts"></div>
+        </div>
+        <div id="billingdets_ParentCont" class="billingDetsParent">
+            <div id="itemMenu" class="itemMenu">
+                <div style="margin-top: 2px; margin-bottom: 2px;">
+                    <!-- <label for="room_nums_input">KOT Number/s:</label> -->
+                    <input type="text" id="menusearch_input" class="text-input-search" placeholder="Search Items...">
+                </div>
+                <div id="itemslist_filtered" class="select_items_list">
+                    <!-- <div class="menulist-itemclass">
+                        1. Luchi Chholar Dal/Alu Chachhari
+                    </div> -->
+                </div>
+            </div>
+            <div class="enterItem_div">
+                <div style="display: none; flex-direction: row; justify-content: flex-start; align-items: center;">
+                    <div style="margin-top: 2px; margin-bottom: 2px;">
+                        <!-- <label for="room_nums_input">KOT Number/s:</label> -->
+                        <input type="text" id="enteritembyid_tbox" class="text-input-enteritemid" placeholder="Item ID No.">
+                    </div>
+                    <div class="button-push">
+                        Bill Item
+                    </div>
+                </div>
+                <div class="newitementer_parentdiv">
+                    <div style="width: 99%; display: flex; flex-direction: row; justify-content: flex-start; align-items: center;">
+                        <div style="width: 100%; margin-top: 2px; margin-bottom: 2px;">
+                            <!-- <label for="room_nums_input">KOT Number/s:</label> -->
+                            <input type="text" id="newitemname_tbox" class="text-input-newitemdets" placeholder="New Item Name">
+                        </div>
+                    </div>
+                    <div style="width: 99%; display: flex; flex-direction: row; justify-content: flex-start; align-items: center;">
+                        <div style="width: 100%; margin-top: 2px; margin-bottom: 2px;">
+                            <!-- <label for="room_nums_input">KOT Number/s:</label> -->
+                            <input type="text" id="newitemrate_tbox" class="text-input-newitemdets" placeholder="New Item Rate">
+                        </div>
+                    </div>
+                    <div style="width: 99%; display: flex; flex-direction: row; justify-content: flex-start; align-items: center;">
+                        <div style="width: 100%; margin-top: 2px; margin-bottom: 2px;">
+                            <!-- <label for="room_nums_input">KOT Number/s:</label> -->
+                            <input type="text" id="newitemqty_tbox" class="text-input-newitemdets" placeholder="New Item Qty.">
+                        </div>
+                    </div>
+                    <div class="button-push" onclick="return billNewItem_customitem();">
+                        Bill New Item
+                    </div>
+                </div>
+                <div class="button-123" onclick="return saveCurrentBill();">
+                    Save Bill
+                </div>
+                <div class="button-123" onclick="return generateBillOfficeCopy();">
+                    Generate Bill
+                </div>
+                <div style="width: 99%; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;">
+                    <div style="width: 100%; margin-top: 2px; margin-bottom: 2px;">
+                        <!-- <label for="room_nums_input">KOT Number/s:</label> -->
+                        <input type="text" id="searchbills" class="text-input-searchbill" placeholder="Search bills...">
+                    </div>
+                    <div style="display: flex; flex-direction: row; width: 100%; justify-content: space-around;">
+                        Date: <input type="checkbox" id="datecbox_filter"> Customer Name: <input type="checkbox" id="cnamecbox_filter"> KOT: <input type="checkbox" id="kotcbox_filter">
+                    </div>
+                    <div id="billinglist_filtered" class="select_bills_list">
+                        <!-- <div class="billlist-itemclass">
+                            1. Luchi Chholar Dal
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+            <div id="billSummaryParentCont" class="billSummaryParentCont">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <h3>Bill Summary</h3>
+                </div>
+                <div style="display: flex; flex-direction: row;">
+                    <div style="display: flex; width: 5%; font-size: large; font-weight: bold; justify-content: center; align-items: center;">Sl no.</div>
+                    <div style="display: flex; width: 45%; font-size: large; font-weight: bold; justify-content: center; align-items: center;">Item Name.</div>
+                    <div style="display: flex; width: 12.5%; font-size: large; font-weight: bold; justify-content: center; align-items: center;">Rate</div>
+                    <div style="display: flex; width: 10%; font-size: large; font-weight: bold; justify-content: center; align-items: center;">Qty.</div>
+                    <div style="display: flex; width: 15%; font-size: large; font-weight: bold; justify-content: center; align-items: center;">Amt</div>
+                </div>
+                <div id="billsummaryparentact" class="billsummary_actualparent">
+                    <!-- <div class="billeditem_cont">
+                        <div class="slno_billsummary_class">
+                            12
+                        </div>
+                        <div class="itemname_billsummary_class">
+                            Paratha with Alu Dum
+                        </div>
+                        <div class="rate_billsummary_class">
+                            <input type="text" id="rate_bill_input" class="text-input-rate_billsummary" value="00.00">
+                        </div>
+                        <div class="qty_billsummary_class">
+                            <input type="text" id="qty_bill_input" class="text-input-qty_billsummary" value="00">
+                        </div>
+                        <div class="amount_billsummary_class">
+                            <input type="text" id="amount_bill_input" class="text-input-qty_billsummary" value="00.00" readonly>
+                        </div>
+                        <div class="delitem_billsummary_class">
+                            X
+                        </div>
+                    </div> -->
+                </div>
+                <div class="bill_discount_deliverycharge_cont">
+                    <!-- <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;"> -->
+                        <label for="discount_percent_input">Discount(%): </label>
+                        <input type="number" id="discount_percent_input" class="text-input-discount_delivery" value="0" step="0.01">
+                        <label for="delivery_charge_input">Delivery Charge: </label>
+                        <input type="number" id="delivery_charge_input" class="text-input-discount_delivery" value="0">
+                        <label for="sum_total">Sum Total: </label>
+                        <input type="number" id="sum_total" class="text-input-discount_delivery" readonly step="0.01">
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
