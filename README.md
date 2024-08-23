@@ -1,6 +1,8 @@
 # bill-generation-python
 GUI based billing software created with python and sqlite as backend and html/js as web based frontend, run on localhost, using eel framework to connect frontend to backend
 
+![Screenshot (207)](https://github.com/user-attachments/assets/2b86df0f-05a6-41a5-9287-67ea59a81beb)
+
 To change bill output format, edit billtemplate.html under ./template_html/ folder. Python file main.py references billtemplate.html when generating new bill. It sets bill values using bs4 Beautiful Soup by identifying the specific value fields using the div id. So change that accordingly in both main.py code and billtemplate.html code. Taxation code has not been added yet. But, extra charge can be added as a new item or as a negative discount of the sumtotal. Running main.py should start the program. Tested on windows 10 and windows 11. Check below dependencies before running program.
 
 py libs (dependencies)
