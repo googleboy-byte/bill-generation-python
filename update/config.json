@@ -1,0 +1,16 @@
+{
+    "updatedfiles":{
+        "1" : "root/interface/index.html",
+        "2" : "root/interface/script.js",
+        "3" : "root/main.py"
+    },
+    "addedfiles":{
+        "1" : "root/updatepayment.py",
+        "2" : "root/paymentinterface/index.html",
+        "3" : "root/paymentinterface/script.js",
+        "4" : "root/paymentinterface/styles.css"
+    },
+    "removedfiles":{
+
+    }
+}

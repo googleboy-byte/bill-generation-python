@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="./eel.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>RAKTOKOROBI PAYMENT DATABASE</title>
+</head>
+<body>
+    <!-- <h1>Hello from Eel!</h1>
+    <button onclick="return sayHello();">
+        Click me
+    </button>
+    <div id="response">
+        response div
+    </div> -->
+
+    <div class="modal-overlay" id="modalOverlay">
+        <!-- Modal Content -->
+        <div class="modal">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <h2>Payment Summary</h2>
+            <input id="billsummary_startbno" type="text" class="text-input" placeholder="Starting Bill Number">
+            <input id="billsummary_endbno" type="text" class="text-input" placeholder="Ending Bill Number">
+            <div class="modal-buttons">
+                <button id="okBtn" class="button-clear" onclick="return genSummary_bno(document.getElementById('billsummary_startbno').value, document.getElementById('billsummary_endbno').value);">Generate Summary</button>
+                <button id="cancelBtn" class="button-clear">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const modalOverlay = document.getElementById('modalOverlay');
+        const closeBtn = document.getElementById('closeBtn');
+        const cancelBtn = document.getElementById('cancelBtn');
+
+        closeBtn.addEventListener('click', () => {
+            modalOverlay.style.display = 'none';
+        });
+
+        cancelBtn.addEventListener('click', () => {
+            modalOverlay.style.display = 'none';
+        });
+    </script>
+    <div class="modal-overlay1" id="modalOverlay1">
+        <!-- Modal Content -->
+        <div class="modal1">
+            <span class="close-btn1" id="closeBtn1">&times;</span>
+            <h2>Payment Summary</h2>
+            <input id="billsummary_ndaysfield" type="number" step="1" min="1"  class="text-input" placeholder="Last N Days...">
+            <div class="modal-buttons1">
+                <button id="okBtn1" class="button-clear" onclick="return genSummary_ndays(document.getElementById('billsummary_ndaysfield').value);">Generate Summary</button>
+                <button id="cancelBtn1" class="button-clear">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const modalOverlay1 = document.getElementById('modalOverlay1');
+        const closeBtn1 = document.getElementById('closeBtn1');
+        const cancelBtn1 = document.getElementById('cancelBtn1');
+
+        closeBtn1.addEventListener('click', () => {
+            modalOverlay1.style.display = 'none';
+        });
+
+        cancelBtn1.addEventListener('click', () => {
+            modalOverlay1.style.display = 'none';
+        });
+    </script>
+    <div class="menu-bar">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="return showPrevBillPayment();">◀ Prev
+            </button>
+            <!-- <div class="dropdown-content" id="prevbillbutton">
+            </div> -->
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="return showNextBillPayment();">Next ▶
+            </button>
+            <!-- <div class="dropdown-content" id="prevbillbutton">
+            </div> -->
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="return gotoBillPayment();">ACCESS PAYMENT
+            </button>
+            <!-- <div class="dropdown-content" id="opengenbillbtn">
+            </div> -->
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">SUMMARY 
+                ▼
+            </button>
+            <div class="dropdown-content">
+                <div class="menu-options" onclick="return openBillNoSummaryModal();">BILL NO</div>
+                <div class="menu-options" onclick="return openBillNoSummaryModal_days();">DAYS</div>
+            </div>
+        </div>
+    </div>
+    <div class="billBoxMainParent">
+        <div class="bno_date_custname_parentDiv" id="cont1">
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding-left: 8px; padding-bottom: 4px;">
+                <label for="bno_text" style="width: fit-content;">Bill No:</label>
+                <div id="bno_text_display" class="text-input"></div>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding-left: 8px; padding-bottom: 4px;">
+                <label for="cust_name_input" style="width: fit-content;">Customer Name:</label>
+                <input type="text" id="cust_name_display" class="text-input" placeholder="Customer_name" readonly>
+            </div>
+        </div>
+        <div id="paymentdets_ParentCont" class="billingDetsParent">
+
+            <div id="paymentSummaryParentCont" class="billSummaryParentCont">
+            
+                <!-- <div class="paymentrecordrow">
+                    <select id="dropdown" name="options">
+                        <option value="option1">Cash</option>
+                        <option value="option2">UPI</option>
+                        <option value="option3">Card</option>
+                        <option value="option4">Bank Transfer</option>
+                    </select>
+                    
+                    <input type="text" id="date_input" class="text-input" placeholder="dd/mm/yyyy">
+                    
+                    <input type="text" id="amountinput" class="text-input" placeholder="Amount (in Rs.)">
+                    
+                    <input type="text" id="commentinput" class="text-input" placeholder="Comment...">
+                    
+                    <div class="delitem_billsummary_class">
+                        X
+                    </div>
+                    
+                </div> -->
+            </div>
+        </div>
+        <div style="width: 100%; display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 30px;">
+            <div class="button-clear" onclick="return addPayment();">Add Payment</div>
+            <div class="button-clear" onclick="return updatePaymentRecord();">Update Record</div>
+        </div>
+        <div class="bno_date_custname_parentDiv" id="cont2">
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding-left: 8px; padding-bottom: 4px;">
+                <label for="bno_text" style="width: fit-content;">Billed Amount:</label>
+                <div id="billedamount_display" class="text-input"></div>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding-left: 8px; padding-bottom: 4px;">
+                <label for="bno_text" style="width: fit-content;">Paid Amount:</label>
+                <div id="paidamount_display" class="text-input"></div>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding-left: 8px; padding-bottom: 4px;">
+                <label for="bno_text" style="width: fit-content;">Due Amount:</label>
+                <div id="dueamount_display" class="text-input"></div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
